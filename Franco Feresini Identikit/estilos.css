@@ -1,0 +1,220 @@
+nav {
+    background-color: #FFB74D;
+    padding: 10px;
+    border-bottom: 3px solid #6D4C41;
+}
+
+nav a {
+    color: #FFF3E0;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+body {
+    margin: 0;
+    padding: 0%;
+    text-align: center;
+    background-color: #F0E1B2;
+    font-family: 'Museo Moderno', sans-serif;
+}
+
+h1 {
+    background-color: #FFB74D;
+    color: #FFF3E0;
+    font-style: normal;
+    padding: 15px;
+    border-bottom: 3px solid #6D4C41;
+}
+
+p {
+    background-color: #F5E45D;
+    margin: 0 auto;
+    padding: 10px;
+    width: 80%;
+    max-width: 600px;
+    border: 2px solid #F5993C;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #3E2723;
+    background-color: #F5993C;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #d16f0d;
+    color: white;
+}
+
+table {
+    margin: 20px auto;
+    text-align: left;
+    width: 80%;
+    border-collapse: collapse;
+}
+
+table td {
+    padding: 10px;
+    border: 1px solid #6D4C41;
+}
+
+table td[colspan="4"] {
+    background-color: #FFB74D;
+    color: #FFF3E0;
+    text-align: center;
+}
+
+.pregunta {
+    margin: 30px auto;
+    background-color: #F0CF62;
+    padding: 20px;
+    border: 2px solid #000000;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+}
+
+.pregunta img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.opciones button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color: #000000;
+    color: #3E2723;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Museo Moderno', sans-serif;
+}
+
+.opciones button:hover {
+    background-color: #000000;
+    color: white;
+}
+
+.slide {
+    display: none;
+    text-align: center;
+    background-color: #F0CF62;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 700px;
+    border-radius: 15px;
+    border: 2px solid #000000;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+#pregunta1:checked ~ .p1,
+#pregunta2:checked ~ .p2,
+#pregunta3:checked ~ .p3,
+#fin:checked ~ .final {
+    display: block;
+}
+
+.opcion {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    width: fit-content;
+    background-color: #F5993C;
+    color: #3E2723;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.opcion:hover {
+    background-color: #558B2F;
+    color: white;
+}
+
+.slide img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.final {
+    background-color: #F5993C;
+    color: #3E2723;
+    padding: 30px;
+    margin: 20px auto;
+    border-radius: 15px;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.menu {
+    background-color: #F5E45D;
+    width: 25%;
+    padding: 20px;
+    border-right: 3px solid #6D4C41;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.menu h2 {
+    color: #3E2723;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 100%;
+    background-color: #FFB74D;
+    color: #FFF3E0;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu button:hover {
+    background-color: #000000;
+    color: white;
+}
+
+.video {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video iframe {
+    width: 80%;
+    height: 400px;
+    border: 3px solid #6D4C41;
+    border-radius: 10px;
+}

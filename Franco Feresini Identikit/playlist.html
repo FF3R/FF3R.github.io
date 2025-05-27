@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Playlist de Videos</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>Playlist Interactiva</h1>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="cultivos.html">Tipos de Cultivos</a>
+        <a href="trivia.html">Trivia Permacultura</a>
+        <a href="playlist.html">Playlist</a>
+    </nav>
+
+    <div class="container">
+        <div class="menu">
+            <h2>Selecciona una canción</h2>
+            <button onclick="cambiarVideo('https://www.youtube.com/embed/a7_al3uciVc')">Gustavo Cerati - Cactus</button>
+            <button onclick="cambiarVideo('https://www.youtube.com/embed/-ACG_gupkDw')">Gustavo Cerati - Fuerza Natural</button>
+            <button onclick="cambiarVideo('https://www.youtube.com/embed/4dPRGfGmCmU')">Steely Dan - Reelin' In The Years</button>
+            <button onclick="cambiarVideo('https://www.youtube.com/embed/aQnW-MxAU6U')">Steely Dan - Do It Again</button>
+            <button onclick="cambiarVideo('https://www.youtube.com/embed/IXdNnw99-Ic')">Pink Floyd - Wish You Were Here</button>
+            <button onclick="cambiarVideo('https://www.youtube.com/embed/i9c-_i9yqgM')">Babasónicos - El Colmo</button>
+            <button onclick="cambiarVideo('https://www.youtube.com/embed/cJtL8vWNZ4o')">Billy Joel - Moving Out (Anthony's Song)</button>
+            <button onclick="cambiarVideo('https://www.youtube.com/watch?v=ZDjG4Y8laT0')">Los Autenticos Decadente - Costumbres Argentinas</button>
+        </div>
+
+        <div class="video">
+            <iframe id="player" src="https://www.youtube.com/embed/8S3-33PQOUQ" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script>
+        function cambiarVideo(url) {
+            document.getElementById("player").src = url;
+        }
+    </script>
+</body>
+</html>
