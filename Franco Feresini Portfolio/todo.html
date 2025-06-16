@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lista de tareas</title>
+  <link rel="stylesheet" href="estilos.css"/>
+</head>
+<body>
+  <header>
+    <h1>Lista de tareas</h1>
+    <nav><a href="index.html">← Volver</a></nav>
+  </header>
+  <main>
+    <form id="todo-form">
+      <input type="text" id="nueva-tarea" placeholder="Nueva tarea…" required/>
+      <button type="submit">Añadir</button>
+    </form>
+    <ul id="lista-tareas" class="todo-list"></ul>
+  </main>
+  <script src="js/todo.js" defer></script>
+</body>
+</html>

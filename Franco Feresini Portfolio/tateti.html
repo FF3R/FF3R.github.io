@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tateti</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <style>
+    /* Mini-CSS específico para el tablero */
+    .tateti-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 10px;
+      max-width: 300px;
+      margin: 30px auto;
+    }
+    .tateti-cell {
+      background-color: #F5E45D;
+      border: 2px solid #3E2723;
+      border-radius: 5px;
+      font-size: 2rem;
+      text-align: center;
+      line-height: 80px;
+      height: 80px;
+      cursor: pointer;
+      user-select: none;
+      transition: background-color 0.2s;
+    }
+    .tateti-cell:hover {
+      background-color: #ffe7c2;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tateti</h1>
+    <nav>
+      <a href="index.html">← Volver</a>
+    </nav>
+  </header>
+
+  <main>
+    <div id="board" class="tateti-grid">
+      <div class="tateti-cell" data-cell="0"></div>
+      <div class="tateti-cell" data-cell="1"></div>
+      <div class="tateti-cell" data-cell="2"></div>
+      <div class="tateti-cell" data-cell="3"></div>
+      <div class="tateti-cell" data-cell="4"></div>
+      <div class="tateti-cell" data-cell="5"></div>
+      <div class="tateti-cell" data-cell="6"></div>
+      <div class="tateti-cell" data-cell="7"></div>
+      <div class="tateti-cell" data-cell="8"></div>
+    </div>
+    <button id="restart" style="display:block;margin:20px auto;padding:10px 20px;background:#F5993C;color:#FFF3E0;border:none;border-radius:5px;cursor:pointer;">
+      Reiniciar
+    </button>
+  </main>
+
+  <script src="js/tateti.js" defer></script>
+</body>
+</html>
